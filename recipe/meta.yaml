@@ -1,4 +1,4 @@
-{% set version = "4.11.0" %}
+{% set version = "4.11.1" %}
 
 package:
   name: asphalt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/asphalt/asphalt-{{ version }}.tar.gz
-  sha256: d152b7033d55c1e95b115bea38ebbeb20f92369ab4e7349844d20c40a3ace442
+  sha256: 2db407956cdc8e9b71619f68b102f5e6affa4e3caf42e02927c03b81d49db3b6
 
 build:
   noarch: python
