@@ -1,4 +1,4 @@
-{% set version = "4.11.1" %}
+{% set version = "4.12.0" %}
 
 package:
   name: asphalt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/asphalt/asphalt-{{ version }}.tar.gz
-  sha256: 2db407956cdc8e9b71619f68b102f5e6affa4e3caf42e02927c03b81d49db3b6
+  sha256: 21e2b323aba833ecd1ea84746b55d486de5027f119987528ddb7b20c0272d10e
 
 build:
   noarch: python
@@ -24,7 +24,6 @@ requirements:
     - importlib_metadata >=4.4
     - typing_extensions
     - ruamel.yaml >=0.15
-    - typeguard >=2.0,<3
     - async_generator >=1.4,<2
     - asyncio_extras >=1.3,<2
     - async-timeout >=2.0
