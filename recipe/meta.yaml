@@ -10,10 +10,11 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - asphalt = asphalt.core.cli:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script_env: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
 
 requirements:
   host:
