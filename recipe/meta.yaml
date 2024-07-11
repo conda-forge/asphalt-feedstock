@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/asphalt/asphalt-{{ version }}.tar.gz
-  sha256: 21e2b323aba833ecd1ea84746b55d486de5027f119987528ddb7b20c0272d10e
+  url: https://github.com/asphalt-framework/asphalt/archive/refs/tags/{{ version }}.tar.gz
+  sha256: db0fe5eca288e68b7b7159e8785f8601cbd7bc1a51ed8a5baa668700b252a34a
 
 build:
   noarch: python
-  number: 1
+  number: 2
   entry_points:
     - asphalt = asphalt.core.cli:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
